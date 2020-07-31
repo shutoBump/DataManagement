@@ -9,8 +9,14 @@ public class CoinToss {
 		int tails = 0;
 		int num;
 
-		System.out.println("Tossing a coin...");
+		// 名前
+		System.out.println("Who are you ?");
+		Scanner scan = new Scanner(System.in);
+		String name = scan.next();
+		System.out.println("Hello " + name + "!");
 
+		//コイントス
+		System.out.println("Tossing a coin...");
 		for (int i = 1; i <= 3; i++) {
 			Random rand = new Random();
 			num = rand.nextInt();
