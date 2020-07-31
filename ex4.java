@@ -1,9 +1,10 @@
+package ohtomo;
+
 import java.util.Random;
+import java.util.Scanner;
 
 public class CoinToss {
-
 	public static void main(String[] args) {
-
 		int heads = 0;
 		int tails = 0;
 		int num;
@@ -23,5 +24,12 @@ public class CoinToss {
 			}
 		}
 		System.out.println("Heads: " + heads + ", Tails: " + tails);
+
+		// 勝敗判定
+		if (heads > tails) {
+			System.out.println(name + " won!");
+		} else {
+			System.out.println(name + " lost");
+		}
 	}
 }
